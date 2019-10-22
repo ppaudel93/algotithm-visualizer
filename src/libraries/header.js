@@ -12,6 +12,13 @@ class Header {
       to: '/'
     },
     {
+      label: 'Algorithms',
+      value: 'algorithms',
+      icon: 'code-tags',
+      slot: 'start',
+      to: '/algorithms'
+    },
+    {
       label: 'Components',
       value: 'components',
       icon: 'view-carousel',
