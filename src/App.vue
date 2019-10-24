@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <BaseHeader class="header"/>
     <router-view class="outer-container" />
   </div>
@@ -16,6 +16,8 @@ export default {
 </script>
 
 <style lang="sass">
-  .outer-container
-    margin-top: 3rem
+  .app
+    height: 100%
+    .outer-container
+      margin-top: 3rem
 </style>
