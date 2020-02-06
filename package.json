@@ -16,9 +16,9 @@
   "devDependencies": {
     "@mdi/font": "^3.9.97",
     "@vue/cli-plugin-babel": "^3.10.0",
-    "@vue/cli-service": "^3.10.0",
+    "@vue/cli-service": "^4.1.2",
     "sass": "^1.17.4",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.10"
   }
 }
