@@ -1,5 +1,5 @@
 <template>
-  <b-button :text="link" :small="small">
+  <b-button v-bind="$attrs" v-on="$listeners" :text="link" :small="small">
     {{ label }}
   </b-button>
 </template>

@@ -28,6 +28,7 @@ import { Sidebar } from '@/libraries'
 export default {
   components: {
     StackComponent: () => import('./StackView'),
+    QueueComponent: () => import('./QueueView')
   },
   data: () => ({
     items: Sidebar.sidebarItems,
