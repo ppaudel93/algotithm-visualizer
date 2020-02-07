@@ -17,6 +17,25 @@
   padding: 0.5rem 1rem
   color: $primary-invert
   border: 1px solid $primary
-  border-radius: 5px
+  border-radius: 30px
+  background: $primary-opacity-60p
+
+.bubble
+  background-color: $primary-opacity-60p
+  display: inline-block
+  height: 5rem
+  width: 5rem
+  border-radius: 50%
+  position: absolute
 
 .main-loader
+  height: 100%
+  overflow: hidden
+
+@for $bubble from 1 through $total_bubbles
+  .bubble-#{$bubble}
+    opacity: (random(100))*0.1
+    left: #{random(100)}vw
+    top: #{random(100)}vh
+    animation: #{14+ $bubble*0.1}s ease infinite move-#{$bubble}
+    transform: translate(0, 0) scale((random(200) + 5)*0.01)
