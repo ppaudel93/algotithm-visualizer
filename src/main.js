@@ -6,6 +6,7 @@ import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import './static/variables.sass'
 import './static/main.sass'
+import './static/common.sass'
 
 Vue.config.productionTip = false
 Vue.use(Buefy)

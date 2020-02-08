@@ -20,6 +20,12 @@ h1, h2, h3, h4, span, strong
   animation: 5s ease infinite rotate
 .animate-flip
   animation: 10s ease infinite flip
+
+@for $bubble from 1 through $total_bubbles
+  @keyframes move-#{$bubble}
+    #{random(30) + 30}%
+      transform: translate(#{random(100) - 50}vw, #{random(100) - 50}vh) scale((random(10)) * 0.01)
+
 @keyframes fade-in
   0%
     opacity: 0

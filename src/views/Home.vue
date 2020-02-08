@@ -1,21 +1,24 @@
 <template>
   <div class="main-body">
+    <BaseBubbleLoader/>
     <transition name="fade">
-      <strong class="primary-text animate-fade-in main-screen-content">The Vue Learning Experience</strong>
+      <p class="primary-tag-wrapper animate-fade-in main-screen-content">The Vue Learning Experience</p>
     </transition>
   </div>
 </template>
 
 <script>
-import { BaseButton } from '../components'
+import { BaseBubbleLoader } from '../components'
 
 export default {
-  
+  components: {
+    BaseBubbleLoader,
+  }
 };
 </script>
 
 <style lang="sass">
-.main-body  
+.main-body
   background: url(../assets/unsplash-macbook.jpg) no-repeat center center fixed
   -webkit-background-size: cover
   -moz-background-size: cover
@@ -26,12 +29,7 @@ export default {
   background-attachment: fixed
   width: 100vw
   height: calc(100vh - 3rem)
-  .fade-enter-active, .fade-leave-active
-    transition: opacity 0.5s
-  .fade-enter, .fade-leave-to
-    opacity: 0
   .main-screen-content
-    font-size: 3em
     position: fixed
     top: 40vh
     left: 28vw
