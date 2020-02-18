@@ -2,7 +2,7 @@
   <div class="main-body">
     <BaseBubbleLoader/>
     <transition name="fade">
-      <p class="primary-tag-wrapper animate-fade-in main-screen-content">The Vue Learning Experience</p>
+      <p class="primary-tag-wrapper animate-fade-in main-screen-content custom-font-size-14px">The Vue Learning Experience</p>
     </transition>
   </div>
 </template>

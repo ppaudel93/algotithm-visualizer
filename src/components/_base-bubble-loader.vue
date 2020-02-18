@@ -8,7 +8,7 @@
 
 export default {
   data: () => ({
-    randomNumberArray: Array.from({length: 30}, () => Math.floor(Math.random() * 9))
+    randomNumberArray: Array.from({length: 60}, () => Math.floor(Math.random() * 9))
   }),
   methods: {
     bubbleClass(index) {

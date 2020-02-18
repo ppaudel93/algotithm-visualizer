@@ -10,8 +10,23 @@
 .flex-direction-column
   flex-direction: column
 
+.flex-direction-row-reverse
+  flex-direction: row-reverse
+
+.flex-direction-column-reverse
+  flex-direction: column-reverse
+
 .content-flex-start
   justify-content: flex-start
+
+.custom-font-size-16px
+  font-size: 1.6rem
+
+.custom-font-size-15px
+  font-size: 1.5rem
+
+.custom-font-size-14px
+  font-size: 1.4rem
 
 .primary-tag-wrapper
   padding: 0.5rem 1rem
@@ -32,10 +47,46 @@
   height: 100%
   overflow: hidden
 
-@for $bubble from 1 through $total_bubbles
+@for $bubble from 1 through $total-bubbles
   .bubble-#{$bubble}
     opacity: (random(100))*0.1
     left: #{random(100)}vw
     top: #{random(100)}vh
     animation: #{14+ $bubble*0.1}s ease infinite move-#{$bubble}
-    transform: translate(0, 0) scale((random(200) + 5)*0.01)
+    transform: translate(0, 0) scale((random(20))*0.02)
+
+@for $value from 1 through $default-value-100
+  .m-a-#{$value}
+    margin: #{$value}px
+
+@for $value from 1 through $default-value-100
+  .m-b-#{$value}
+    margin-bottom: #{$value}px
+
+@for $value from 1 through $default-value-100
+  .m-t-#{$value}
+    margin-top: #{$value}px
+
+@for $value from 1 through $default-value-100
+  .m-l-#{$value}
+    margin-left: #{$value}px
+
+@for $value from 1 through $default-value-100
+  .m-r-#{$value}
+    margin-right: #{$value}px
+
+@for $value from 1 through $default-value-100
+  .p-a-#{$value}
+    padding: #{$value}px
+
+@for $value from 1 through $default-value-100
+  .flex-basis-#{$value}
+    flex-basis: calc(#{$value}%)
+
+@for $height from 1 through $default-value-100
+  .h-#{$height}-p
+    height: calc(#{$height}%)
+
+@for $width from 1 through $default-value-100
+  .w-#{$width}-p
+    height: calc(#{$width}%)

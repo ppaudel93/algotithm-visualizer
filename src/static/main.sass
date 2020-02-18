@@ -21,10 +21,10 @@ h1, h2, h3, h4, span, strong
 .animate-flip
   animation: 10s ease infinite flip
 
-@for $bubble from 1 through $total_bubbles
+@for $bubble from 1 through $total-bubbles
   @keyframes move-#{$bubble}
     #{random(30) + 30}%
-      transform: translate(#{random(100) - 50}vw, #{random(100) - 50}vh) scale((random(10)) * 0.01)
+      transform: translate(#{random(100) - 50}vw, #{random(100) - 50}vh) scale((random(3)) * 0.01)
 
 @keyframes fade-in
   0%
@@ -51,3 +51,14 @@ h1, h2, h3, h4, span, strong
     transform: scaleX(-1)
   100%
     transform: scaleX(1)
+
+@keyframes slide-left
+  from
+    transform: translateX(10px)
+  to
+    transform: translateX(0)
+@keyframes slide-right
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(10px)
